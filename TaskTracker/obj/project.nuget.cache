@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CPdw69O86fYXRdCxUfpHb8YrPiUKXpyHfo0SODpX4yPUtu8cqyiYMrsl8TWopK1QaMl1ljnosPv6SlIEabSAIw==",
+  "dgSpecHash": "RUzaAjJuvMcpGJ2nExk1+Uj5VfYz2Hl6V9ThsvmgdiaHt/bBfq/reBXPbwjGsOVXo826i46A1Z38KUQYx0Z6lQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Thomas\\Documents\\GitHub\\TaskTracker\\TaskTracker\\ProductsAPI.csproj",
+  "projectFilePath": "C:\\Users\\Thomas\\Documents\\GitHub\\ProductsAPI\\TaskTracker\\ProductsAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Thomas\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Thomas\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

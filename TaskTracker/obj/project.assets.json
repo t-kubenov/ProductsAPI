@@ -229,11 +229,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Thomas\\Documents\\GitHub\\TaskTracker\\TaskTracker\\ProductsAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Thomas\\Documents\\GitHub\\ProductsAPI\\TaskTracker\\ProductsAPI.csproj",
       "projectName": "ProductsAPI",
-      "projectPath": "C:\\Users\\Thomas\\Documents\\GitHub\\TaskTracker\\TaskTracker\\ProductsAPI.csproj",
+      "projectPath": "C:\\Users\\Thomas\\Documents\\GitHub\\ProductsAPI\\TaskTracker\\ProductsAPI.csproj",
       "packagesPath": "C:\\Users\\Thomas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Thomas\\Documents\\GitHub\\TaskTracker\\TaskTracker\\obj\\",
+      "outputPath": "C:\\Users\\Thomas\\Documents\\GitHub\\ProductsAPI\\TaskTracker\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Thomas\\AppData\\Roaming\\NuGet\\NuGet.Config",

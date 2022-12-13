@@ -31,9 +31,13 @@ namespace ProductsAPI.Controllers
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            Products.Remove(Products.SingleOrDefault(x => x.Id == id));
+            Products.Remove(Products.FirstOrDefault(x => x.Id == id));
             return Ok();
         }
+        private int NextProductId => Products.Count() == 0 ? 1 : Products.Max(x => x.Id) + 1;
+
+        [HttpGet("GetNextProductId")]
+        public int GetNextProductId() => NextProductId;
 
         [HttpPost]
         public IActionResult Post(Product product)
@@ -42,9 +46,29 @@ namespace ProductsAPI.Controllers
             {
                 return BadRequest(ModelState);
             }
+            product.Id = NextProductId;
             Products.Add(product);
             return CreatedAtAction(nameof(Get), new {id = product.Id}, product);
         }
+
+        [HttpPost("AddProduct")]
+        public IActionResult PostBody([FromBody] Product product) => Post(product);
+
+        [HttpPut]
+        public IActionResult Put(Product product)
+        {
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+
+            var storedProduct = Products.FirstOrDefault(x => x.Id == product.Id);
+            if (storedProduct == null) return NotFound();
+
+            storedProduct.Name = product.Name;
+            storedProduct.Price = product.Price;
+            return Ok(storedProduct);
+        }
+
+        [HttpPut("UpdateProduct")]
+        public IActionResult PutBody([FromBody] Product product) => Put(product);
 
         //public IActionResult Index()
         //{
